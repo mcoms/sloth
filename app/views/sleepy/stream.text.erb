@@ -1,0 +1,10 @@
+Waiting for <%= @time %> seconds, <%= @steps %> times...
+<%
+  @steps.times do |index|
+    sleep @time
+%>
+Step <%= index + 1 %>
+<%
+  end
+%>
+Done!
